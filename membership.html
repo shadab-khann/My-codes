@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership Plans - FitZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Internal CSS specific to Membership Page */
+    .hero-membership {
+      background: url('https://source.unsplash.com/1600x600/?fitness,team') no-repeat center/cover;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-membership h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .plan-comparison {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .plan {
+      flex: 1;
+      min-width: 280px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .plan h3 {
+      margin-bottom: 15px;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .plan ul li {
+      margin-bottom: 10px;
+    }
+
+    .plan-premium {
+      border: 2px solid #00C8A7;
+    }
+
+    .pricing-card {
+      background: #1F1F1F;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 400px;
+    }
+
+    .pricing-card h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .pricing-card p {
+      margin: 10px 0;
+    }
+
+    .locked-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .locked-box {
+      flex: 1;
+      min-width: 280px;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(3px);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      border: 1px dashed #ccc;
+      position: relative;
+    }
+
+    .locked-box::after {
+      content: '🔒 Premium Only';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.9rem;
+      color: #ff4444;
+    }
+
+    .trust-section {
+      background: #F7F7F7;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .trust-item {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+
+    .trust-item i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-membership h1 {
+        font-size: 2rem;
+      }
+
+      .plan-comparison, .locked-preview {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">FitGuide</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="workout-plans.html">Workouts</a></li>
+          <li><a href="diet-plans.html">Diets</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-membership">
+    <h1>Unlock Your Full Potential 💪</h1>
+    <p>Join FitZone Premium for personalized workouts, diet plans & more</p>
+    <a href="signup.html" class="btn">Join Premium – ₹199/month</a>
+  </section>
+
+  <div class="container">
+    <!-- Plan Comparison -->
+    <h2>Compare Free vs Premium</h2>
+    <div class="plan-comparison">
+      <!-- Free Plan -->
+      <div class="plan">
+        <h3>Free Plan</h3>
+        <ul>
+          <li>✔️ Access to blog articles</li>
+          <li>✔️ Beginner workout plans</li>
+          <li>✔️ Basic diet tips</li>
+          <li>✔️ Weekly email tips</li>
+        </ul>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="plan plan-premium">
+        <h3>Premium Plan</h3>
+        <ul>
+          <li>⭐ Full workout plans (PDF + Video)</li>
+          <li>⭐ Personalized meal planner</li>
+          <li>⭐ Member-only tutorials</li>
+          <li>⭐ Fitness tracker dashboard</li>
+          <li>⭐ Community + 1-on-1 support</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pricing Card -->
+    <div class="pricing-card">
+      <h2>₹199/month</h2>
+      <p>Cancel anytime. No hidden fees.</p>
+      <a href="signup.html" class="btn">Unlock Premium Now</a>
+      <p style="margin-top: 10px;"><a href="login.html" style="color: #ccc;">Already a member? Log in</a></p>
+    </div>
+
+    <!-- Locked Content Preview -->
+    <h2>Premium Content Preview 🔒</h2>
+    <div class="locked-preview">
+      <div class="locked-box">
+        <h4>Full-Body Split Routine (PDF)</h4>
+        <p>Includes push/pull/legs training + recovery tips.</p>
+      </div>
+      <div class="locked-box">
+        <h4>Personalized 7-Day Meal Plan</h4>
+        <p>Tailored to your body type and goals.</p>
+      </div>
+      <div class="locked-box">
+        <h4>Exclusive Community Access</h4>
+        <p>Get answers from coaches & interact with other members.</p>
+      </div>
+    </div>
+
+    <!-- Trust Section -->
+    <div class="trust-section">
+      <div class="trust-item">
+        <i>🔒</i>
+        <p>Secure Payment</p>
+      </div>
+      <div class="trust-item">
+        <i>💬</i>
+        <p>Live Support</p>
+      </div>
+      <div class="trust-item">
+        <i>↩️</i>
+        <p>7-Day Refund Policy</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FitZone. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

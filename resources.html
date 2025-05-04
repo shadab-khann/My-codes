@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Download free workout PDFs, diet charts, and fitness tools. Perfect for beginners looking to get started.">
+  <title>Free Resources - FitGuide</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .resources-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .resource-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      flex: 1 1 calc(33% - 30px);
+      min-width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .resource-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .resource-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .resource-card a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .resource-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">FitGuide</div>
+  
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+  
+      <nav id="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="workout-plans.html">Workout Plans</a></li>
+          <li><a href="diet-plans.html">Diet Plans</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main -->
+  <main class="container">
+    <h1>Free Fitness Resources</h1>
+    <p>Download beginner-friendly workout plans, diet charts, and essential tools – all for free. Start your transformation today!</p>
+
+    <section class="resources-section">
+      <!-- Resource 1 -->
+      <div class="resource-card">
+        <h2>Beginner Home Workout PDF</h2>
+        <p>A 4-week plan with no equipment needed. Perfect for starting your fitness journey from home.</p>
+        <a href="#" class="btn">Download PDF</a>
+      </div>
+
+      <!-- Resource 2 -->
+      <div class="resource-card">
+        <h2>7-Day Fat Loss Diet Chart</h2>
+        <p>A simple Indian-style meal plan to help you start your calorie deficit with everyday foods.</p>
+        <a href="#" class="btn">Download Chart</a>
+      </div>
+
+      <!-- Resource 3 -->
+      <div class="resource-card">
+        <h2>Warm-Up & Cooldown Guide</h2>
+        <p>Printable routines to prevent injuries and improve performance during workouts.</p>
+        <a href="#" class="btn">Download Now</a>
+      </div>
+
+      <!-- Resource 4 -->
+      <div class="resource-card">
+        <h2>Weekly Fitness Planner (Printable)</h2>
+        <p>Track your workouts, water intake, and meals with this beginner-friendly weekly planner.</p>
+        <a href="#" class="btn">Get Planner</a>
+      </div>
+
+      <!-- Resource 5 -->
+      <div class="resource-card">
+        <h2>Top 10 Meal Prep Recipes (PDF)</h2>
+        <p>Save time with these quick and easy recipes for a healthy weekly meal prep.</p>
+        <a href="#" class="btn">Download Recipes</a>
+      </div>
+
+      <!-- Resource 6 -->
+      <div class="resource-card">
+        <h2>Fitness Habit Tracker</h2>
+        <p>Track your progress, build consistency, and stay accountable with this printable tool.</p>
+        <a href="#" class="btn">Download Tracker</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 FitGuide. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>

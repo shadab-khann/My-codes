@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your ultimate fitness guide for fat loss, muscle gain, balanced diet plans, and practical workout routines.">
+  <meta name="keywords" content="fitness, fat loss, muscle gain, diet plans, home workouts, gym routines">
+  <meta name="author" content="FitGuide">
+  <meta property="og:title" content="FitGuide – Your Fitness Journey Starts Here">
+  <meta property="og:description" content="Access free and premium fitness guidance for all levels.">
+  <meta property="og:image" content="https://source.unsplash.com/1600x900/?fitness,motivation">
+  <meta property="og:url" content="https://fitguide.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>FitGuide – Your Fitness Journey Starts Here</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F7F7F7;
+      color: #1F1F1F;
+      
+    }
+
+    header {
+      background-color: #1F1F1F;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+
+    .hero {
+      background-image: url('fitness.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+    .overlay {
+  position: relative;
+  top: 0; left: 0;
+  padding: 20px;
+  border-radius: 10px;
+  /* width: 100%; height: fit-content; */
+  background-color: rgba(0, 0, 0, 0.699); /* dark transparent overlay */
+  z-index: 1;
+}
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      color: #00C8A7;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.959);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      text-align: center;
+      /* max-width: 600px; */
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero button {
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: #00C8A7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #009b86;
+    }
+
+    .cta-quote {
+      background: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: #1F1F1F;
+    }
+
+    footer {
+      background: #1F1F1F;
+      color: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer div {
+      margin-bottom: 1rem;
+    }
+
+    footer a {
+      color: #00C8A7;
+      text-decoration: none;
+      display: block;
+      margin: 0.25rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<script>
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("navbar").classList.toggle("active");
+  });
+</script>
+
+
+<body>
+  <main>
+    <header>
+      <div class="container nav-container">
+        <div class="logo">FitGuide</div>
+    
+        <div class="hamburger" id="hamburger">
+          ☰
+        </div>
+    
+        <nav id="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="workout-plans.html">Workout Plans</a></li>
+            <li><a href="diet-plans.html">Diet Plans</a></li>
+            <li><a href="resources.html">Free Resources</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+  <section class="hero">
+    <div class="overlay"> 
+    <h1>Start Your Fitness Journey Today</h1>
+    <p>Free & Premium plans to help you lose fat, gain muscle, and improve your lifestyle at your pace.</p>
+    <button onclick="window.location.href='membership.html'">Join Premium</button>
+    </div>
+  
+    </section>
+
+  <section class="cta-quote">
+    “Push yourself, because no one else will do it for you.”
+  </section>
+
+  <footer>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Facebook</a>
+    </div>
+    <div>
+      <h4>Subscribe</h4>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+  </main>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+
+</html>

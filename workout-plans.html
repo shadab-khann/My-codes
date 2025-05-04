@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore various workout plans for fat loss, muscle gain, and strength training. Start your fitness journey today.">
+  <title>Workout Plans - FitGuide</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* General Body Styling */
+ /* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+} */
+
+/* header {
+  background: #333;
+  color: white;
+  padding: 15px 0;
+}
+header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+} */ */
+
+/* .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  } */
+
+/* Main Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+
+/* Workout Plans Section */
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.plan-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-card h2 {
+  font-size: 1.5em;
+  color: #00C8A7;
+  margin-bottom: 15px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-card ul li {
+  margin: 10px 0;
+}
+
+.plan-card ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.plan-card ul li a:hover {
+  text-decoration: underline;
+  color: #00C8A7;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">FitGuide</div>
+  
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+  
+      <nav id="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="workout-plans.html">Workout Plans</a></li>
+          <li><a href="diet-plans.html">Diet Plans</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Workout Plans</h1>
+    
+    <section class="plans">
+      <div class="plan-card">
+        <h2>Home Workouts</h2>
+        <ul>
+          <li><a href="#">Full-body No Equipment</a></li>
+          <li><a href="#">7-minute Daily Routines</a></li>
+          <li><a href="#">Cardio for Beginners</a></li>
+        </ul>
+      </div>
+
+      <div class="plan-card">
+        <h2>Gym Workouts</h2>
+        <ul>
+          <li><a href="#">Push, Pull, Legs Split</a></li>
+          <li><a href="#">Strength Training</a></li>
+          <li><a href="#">Muscle Building</a></li>
+        </ul>
+      </div>
+
+      <div class="plan-card">
+        <h2>Flexibility & Mobility</h2>
+        <ul>
+          <li><a href="#">Yoga for Beginners</a></li>
+          <li><a href="#">Stretching for Flexibility</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 FitGuide. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>

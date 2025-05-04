@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover fitness tips, workout myths, and the best advice to kickstart your fitness journey.">
+  <title>Fitness Blog - FitGuide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">FitGuide</div>
+  
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+  
+      <nav id="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="workout-plans.html">Workout Plans</a></li>
+          <li><a href="diet-plans.html">Diet Plans</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main Content -->
+  
+  <main class="container">
+    <h1>Fitness Blog</h1>
+    <section class="card">
+      
+      <h2><a href="#">5 Myths About Fat Loss You Need to Stop Believing</a></h2>
+      <p>Fat loss is a complex topic, but some myths tend to muddy the waters. Here's a guide to help clear things up...</p>
+      <a class="btn" href="#">Read More</a>
+    </section>
+
+    <section class="card">
+      <h2><a href="#">Warm-Up and Cool-Down: Why They're Critical for Your Success</a></h2>
+      <p>Most people skip warm-ups and cool-downs, but they are essential to prevent injury and optimize results...</p>
+      <a class="btn" href="#">Read More</a>
+    </section>
+
+    <section class="card">
+      <h2><a href="#">How to Stay Consistent with Your Workout Routine</a></h2>
+      <p>Consistency is key in any fitness journey. Learn how to stay motivated and committed, no matter what...</p>
+      <a class="btn" href="#">Read More</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 FitGuide. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>

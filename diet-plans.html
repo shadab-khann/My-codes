@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore diet plans for fat loss, muscle gain, and healthy living. Get started with personalized nutrition.">
+  <title>Diet Plans - FitGuide</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Diet Plan Flex Container */
+    .diet-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .diet-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      flex: 1 1 calc(33% - 30px);
+      min-width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .diet-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .diet-card h2 {
+      font-size: 1.4rem;
+      color: #008c7a;
+      margin-bottom: 15px;
+    }
+
+    .diet-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .diet-card ul li {
+      margin: 10px 0;
+    }
+
+    .diet-card ul li a {
+      color: #1F1F1F;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .diet-card ul li a:hover {
+        color: #00C8A7;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .diet-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">FitGuide</div>
+  
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+  
+      <nav id="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="workout-plans.html">Workout Plans</a></li>
+          <li><a href="diet-plans.html">Diet Plans</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main -->
+  <main class="container">
+    <h1>Diet Plans</h1>
+    <p>Choose a nutrition plan that fits your body and your goals. Our diet plans are created to help you lose fat, build muscle, or maintain a balanced lifestyle.</p>
+
+    <section class="diet-section">
+      <!-- Fat Loss Diets -->
+      <div class="diet-card">
+        <h2>Fat Loss Diets</h2>
+        <ul>
+          <li><a href="#">Calorie-Deficit Indian Meal Plan</a></li>
+          <li><a href="#">Keto-Inspired Beginner Guide</a></li>
+          <li><a href="#">Low-Carb Office Lunches</a></li>
+        </ul>
+      </div>
+
+      <!-- Muscle Gain Diets -->
+      <div class="diet-card">
+        <h2>Muscle Gain Diets</h2>
+        <ul>
+          <li><a href="#">High-Protein Vegetarian Plan</a></li>
+          <li><a href="#">Non-Veg Bulking Blueprint</a></li>
+          <li><a href="#">Smoothies & Shakes for Gains</a></li>
+        </ul>
+      </div>
+
+      <!-- Balanced Lifestyle -->
+      <div class="diet-card">
+        <h2>Balanced Lifestyle</h2>
+        <ul>
+          <li><a href="#">Intermittent Fasting Routine</a></li>
+          <li><a href="#">Hydration & Water Intake Tips</a></li>
+          <li><a href="#">How Sleep Affects Nutrition</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 FitGuide. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>

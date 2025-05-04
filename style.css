@@ -1,0 +1,241 @@
+/* =====================
+   Global Styles
+====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    background-color: #F7F7F7;
+    color: #1F1F1F;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  main{
+    flex: 1;
+      /* display: flex; */
+      /* flex-direction: column; */
+      min-height: 100vh; /* full viewport height */
+    }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  h1{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    color: #00C8A7;
+  }
+  h2{
+    color: #008c7a;
+  }
+  a {
+    color: #00C8A7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #008c7a;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  /* =====================
+     Header + Nav
+  ====================== */
+  header {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* =====================
+     Buttons
+  ====================== */
+  .btn {
+    display: inline-block;
+    background-color: #00C8A7;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color:#008c7a; 
+    color: #F7F7F7;
+  }
+  
+  /* =====================
+     Forms
+  ====================== */
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  /* =====================
+     Boxes & Cards
+  ====================== */
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* =====================
+     Footer
+  ====================== */
+  footer {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  footer .social-icons {
+    margin: 10px 0;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* =====================
+     Responsive
+  ====================== */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* i have changed it for hamburger */
+
+ /* NAV CONTAINER */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Hamburger Style */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Default Nav Links */
+/* nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+} */
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    width: 100%;
+    background-color: #1F1F1F;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  #nav-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  #nav-links.show {
+    display: block;
+  }
+}

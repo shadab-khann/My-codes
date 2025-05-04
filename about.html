@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about our mission to help you get fit with accessible, beginner-friendly workout and diet plans.">
+  <title>About Us - FitGuide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">FitGuide</div>
+  
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+  
+      <nav id="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="workout-plans.html">Workout Plans</a></li>
+          <li><a href="diet-plans.html">Diet Plans</a></li>
+          <li><a href="resources.html">Free Resources</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="card">
+      <h1>About Us</h1>
+      <p>
+        At <strong>FitGuide</strong>, we believe that fitness should be accessible to everyone. Whether you're just starting your journey or looking to improve your results, our guides, workouts, and diets are designed to support every step of the way.
+      </p>
+      <p>
+        We provide free content for all beginners and premium resources for those who want personalized attention, meal planners, video tutorials, and more.
+      </p>
+      <p>
+        Our team consists of certified trainers, nutritionists, and lifestyle coaches dedicated to helping you become the best version of yourself.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Our Mission</h2>
+      <ul>
+        <li>✅ Simplify fitness for beginners</li>
+        <li>✅ Provide science-backed content</li>
+        <li>✅ Deliver affordable premium plans</li>
+        <li>✅ Build a positive fitness community</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Meet the Team</h2>
+      <p><strong>Shadab Khan</strong> - Founder & Fitness Coach</p>
+      <p><strong>Nutrition Team</strong> - Diet Planning Experts</p>
+      <p><strong>Support Team</strong> - Helping you 24/7</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 FitGuide. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a> |
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+</body>
+</html>
